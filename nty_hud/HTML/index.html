@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="design.css" type="text/css" rel="stylesheet">
+    <script src="script.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="wrapper" id="vehicle-container">
+
+                <div class="row center-align">
+                    <div class="speedometer">
+                        <svg class="circle" width="50" height="50">
+                            <circle class="outer" stroke="#FFF" stroke-width="0.5" style="stroke-opacity: 1;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+                            <circle class="background" stroke="#000" stroke-width="3" style="stroke-opacity: 0.4;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>
+                            <circle class="progress progress-speed" stroke-width="2.5" style="stroke-opacity: 1;" fill="transparent" r="18" cx="25" cy="25" stroke-dasharray="70 30" stroke-dashoffset="0"/>                   
+                        </svg>
+                        <div class="text">
+                            <span class="speed"></span>
+                            <span class="kmh">KM/H</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper" id="stats-wrapper">
+                <div class="row stats-row">
+                    <div class="row mic-row">
+                        <div id="boxVoice"></div>
+                        <img src="images/microphone.svg">
+                        <img id="signal" src="images/signal.svg">
+                        <span id="micrange"></span>
+                    </div>
+                    <span id="date"></span>
+                    <div class="row">
+                        <div class="stat" id="health">
+                            <img src="images/vida.png">
+                        </div>
+
+                        <div class="stat" id="armour">
+                            <img src="images/escudo.png">
+                        </div>
+
+                        <div class="stat" id="stamina">
+                            <img src="images/speed.png">
+                        </div>
+
+                        <div class="stat" id="hunger">
+                            <img src="images/hambre.png">
+                        </div>
+
+                        <div class="stat" id="thirst">
+                            <img src="images/sed.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
